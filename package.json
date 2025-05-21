@@ -8,6 +8,10 @@
     ".": {
       "import": "./dist/mottai-ui.es.js",
       "require": "./dist/mottai-ui.umd.js"
+    },
+    "./styles.css": {
+      "require": "./dist/styles.css",
+      "default": "./dist/styles.css"
     }
   },
   "files": [
@@ -15,11 +19,15 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite build && npm run build:css",
+    "build:css": "tailwindcss -m -i ./src/styles/index.css -o ./dist/styles.css",
     "lint": "eslint .",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
+    "storybook:css": "tailwindcss -w -i ./src/styles/index.css -o ./dist/styles.css",
+    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
+    "build-storybook:css": "tailwindcss -m -i ./src/styles/index.css -o ./dist/styles.css",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "D": "^1.0.0",
@@ -44,6 +52,7 @@
     "@vitest/browser": "^3.1.4",
     "@vitest/coverage-v8": "^3.1.4",
     "autoprefixer": "^10.4.17",
+    "concurrently": "^9.1.2",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
