@@ -6,21 +6,21 @@
   "main": "./dist/mottai-ui.umd.js",
   "module": "./dist/mottai-ui.es.js",
   "types": "./dist/index.d.ts",
+  "style": "./dist/styles.css",
   "exports": {
     ".": {
       "import": "./dist/mottai-ui.es.js",
       "require": "./dist/mottai-ui.umd.js",
       "types": "./dist/index.d.ts"
     },
-    "./styles.css": {
-      "require": "./dist/styles.css",
-      "default": "./dist/styles.css"
-    }
+    "./styles": "./dist/styles.css",
+    "./dist/styles.css": "./dist/styles.css"
   },
   "files": [
     "dist",
     "dist/index.d.ts",
-    "dist/**/*.d.ts"
+    "dist/**/*.d.ts",
+    "dist/styles.css"
   ],
   "scripts": {
     "dev": "vite",
