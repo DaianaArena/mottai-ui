@@ -1,7 +1,7 @@
 {
   "name": "mottai-ui",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "./dist/mottai-ui.umd.js",
   "module": "./dist/mottai-ui.es.js",
