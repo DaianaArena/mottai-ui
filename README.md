@@ -14,7 +14,7 @@ npm install mottai-ui
 
 ```jsx
 import { Card } from 'mottai-ui';
-import 'mottai-ui/styles'; // Import styles
+import 'mottai-ui/styles.css'; // Import styles
 
 function App() {
   return (
@@ -32,7 +32,7 @@ Make sure to import the styles in your application:
 
 ```jsx
 // In your main App file or entry point
-import 'mottai-ui/styles';
+import 'mottai-ui/styles.css';
 ```
 
 ## Available Components

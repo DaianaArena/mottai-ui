@@ -13,8 +13,8 @@
       "require": "./dist/mottai-ui.umd.js",
       "types": "./dist/index.d.ts"
     },
-    "./styles": "./dist/styles.css",
-    "./dist/styles.css": "./dist/styles.css"
+    "./dist/styles.css": "./dist/styles.css",
+    "./styles.css": "./dist/styles.css"
   },
   "files": [
     "dist",
