@@ -3,12 +3,14 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "types": "./dist/types/index.d.ts",
+  "main": "./dist/mottai-ui.umd.js",
+  "module": "./dist/mottai-ui.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/mottai-ui.es.js",
       "require": "./dist/mottai-ui.umd.js",
-      "types": "./dist/types/index.d.ts"
+      "types": "./dist/index.d.ts"
     },
     "./styles.css": {
       "require": "./dist/styles.css",
@@ -16,7 +18,9 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "dist/index.d.ts",
+    "dist/**/*.d.ts"
   ],
   "scripts": {
     "dev": "vite",

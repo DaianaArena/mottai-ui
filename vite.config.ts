@@ -13,7 +13,10 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      tsconfigPath: './tsconfig.app.json'
+      tsconfigPath: './tsconfig.app.json',
+      insertTypesEntry: true,
+      include: ['src'],
+      exclude: ['**/*.stories.ts', '**/*.stories.tsx', '**/*.test.ts', '**/*.test.tsx']
     })
   ],
   build: { 
