@@ -45,6 +45,38 @@ A beautiful card component for displaying content.
 <Card 
   title="Card Title" 
   description="Card description goes here" 
+  // Optional: Add custom classes to the container
+  className="my-custom-class"
+  // Optional: Customize specific parts
+  customStyles={{
+    container: "my-container-class",
+    title: "my-title-class",
+    description: "my-description-class"
+  }}
+/>
+```
+
+#### Customization
+
+The Card component can be customized in two ways:
+
+1. Using the `className` prop to add classes to the card container
+2. Using the `customStyles` prop to customize specific parts of the card:
+   - `container`: Styles for the card container
+   - `title`: Styles for the card title
+   - `description`: Styles for the card description
+
+Example with Tailwind classes:
+
+```jsx
+<Card 
+  title="Custom Card" 
+  description="With custom styles" 
+  customStyles={{
+    container: "bg-blue-100 hover:bg-blue-200",
+    title: "text-blue-800 text-2xl",
+    description: "text-blue-600"
+  }}
 />
 ```
 
