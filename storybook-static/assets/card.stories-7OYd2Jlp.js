@@ -1,0 +1,6 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";const r=({title:o,description:d})=>t.jsx("div",{className:"mottai",children:t.jsx("div",{className:"mottai-max-w-sm mottai-rounded mottai-overflow-hidden mottai-shadow-lg mottai-m-4 mottai-bg-white",children:t.jsx("div",{className:"mottai-px-6 mottai-py-4",children:t.jsxs("div",{className:"mottai-space-y-2",children:[t.jsx("h2",{className:"mottai-text-xl mottai-font-bold mottai-text-gray-800",children:o}),t.jsx("p",{className:"mottai-text-gray-600 mottai-text-base",children:d})]})})})});r.__docgenInfo={description:"",methods:[],displayName:"Card",props:{title:{required:!0,tsType:{name:"string"},description:""},description:{required:!0,tsType:{name:"string"},description:""}}};const n={title:"Example/Card",component:r,tags:["docsPage"],argTypes:{title:{control:{type:"text"}},description:{control:{type:"text"}}}},e={args:{title:"Card Title",description:"This is a card"}};var a,s,i;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    title: "Card Title",
+    description: "This is a card"
+  }
+}`,...(i=(s=e.parameters)==null?void 0:s.docs)==null?void 0:i.source}}};const c=["Primary"];export{e as Primary,c as __namedExportsOrder,n as default};

@@ -1,2 +1,3 @@
 import './styles/index.css';
-export { Card } from './components/card';
+export type { CardProps } from './components/card/card';
+export { Card } from './components/card/card';
